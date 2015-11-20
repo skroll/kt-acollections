@@ -1,0 +1,11 @@
+# Gradle files
+.gradle
+build/
+gradle/
+gradlew
+gradlew.bat
+
+# IntelliJ files
+*.iml
+*.ipr
+*.iws
