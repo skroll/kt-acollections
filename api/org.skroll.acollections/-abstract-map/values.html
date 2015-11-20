@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<title>acollect / org.skroll.acollections.AbstractMap.values</title>
+<link rel="stylesheet" href="/dokka/styles/style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">acollect</a>&nbsp;/&nbsp;<a href="../index.html">org.skroll.acollections</a>&nbsp;/&nbsp;<a href="index.html">AbstractMap</a>&nbsp;/&nbsp;<a href=".">values</a><br/>
+<br/>
+<h1>values</h1>
+<code><span class="keyword">open</span> <span class="keyword">val </span><span class="identifier">values</span><span class="symbol">: </span><span class="identifier">Collection</span><span class="symbol">&lt;</span><span class="identifier">V</span><span class="symbol">&gt;</span></code><br/>
+<p>Returns a <a href="#">Collection</a> of all values in this map. Note that this
+collection may contain duplicate values.</p>
+<strong>Implementation</strong><br/>
+<p>This implementation returns a set that subclasses <a href="../-abstract-collection/index.html">AbstractCollection</a>.
+The subclasss iterator method returns a "wrapper object" over this
+maps <a href="#">entries</a> iterator. The <code>size</code> property delegates to this maps
+<code>size</code> property and the <code>contains</code> method delegates to this maps
+<code>containsValue</code> method.</p>
+
+
+<p>The collection is created the first time this method is called, and
+returned in response to all subsequent calls. No synchronization is
+preformed, so there is a slight chance that multiple calls to this
+method will not all return the same set.</p>
+<br/>
+<br/>
+<br/>
+</BODY>
+</HTML>
